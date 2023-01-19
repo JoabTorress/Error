@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+:root {
+   --color01: #D9A76A;
+   --color02: #A78758;
+   --color03: #BB6C2A;
+   --color04: #F21F0C;
+   --color05: #D5D5D5;
+
+   --font-section-one: Arial, sans-serif;
+   --font-section-two: Arial, Helvetica, sans-serif;
+
+   font-size: 16px;
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+body {
+   width: 100%;
+   min-height: 100vh;
+  
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: white;
+}
+
+main {
+   width: 100%;
+   height: 100vh;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: var(--font-section-one);
+   text-align: center;
+}
+main > div.logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+main > div.logo > img {
+   width: 100%;
+}
+.infos > ul {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 2rem;
+}
+.infos > ul > li {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: .5rem;
+}
+.infos > ul > li > i {
+   color: var(--color03);
+}
+.infos > ul > li > i,p {
+   font-size: 1.4rem;
+}
+
+
+
+
+/* Media queries */
+@media (max-width: 488px) {
+   :root {
+      font-size: 12px;
+   }
+}
+@media (max-width: 380px) {
+   :root {
+      font-size: 10px;
+   }
+   main > div.logo > img {
+      width: 90%;
+   }
+}
